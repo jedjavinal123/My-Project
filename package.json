@@ -1,0 +1,12 @@
+{
+  "name": "poe2-build-tracker",
+  "version": "1.0.0",
+  "description": "Track Path of Exile 2 builds: skills, gear, goals and stat progress.",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

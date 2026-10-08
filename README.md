@@ -14,7 +14,14 @@ A small, dependency-free web app for tracking Path of Exile 2 builds.
 
 ## Running it
 
-Open `index.html` in a browser. That's it: there's no build step and nothing to install.
+Either open `index.html` directly in a browser, or serve it with Node (18 or newer):
+
+```bash
+npm start
+```
+
+Then go to http://localhost:3000. Use `PORT=8080 npm start` to pick another port.
+There are no dependencies, so there's nothing to `npm install`.
 
 Data is saved in your browser's `localStorage`, so it stays on that browser and device.
 Use **Export all** to make a backup, or to move your builds to another browser.
@@ -25,3 +32,4 @@ Use **Export all** to make a backup, or to move your builds to another browser.
 - `styles.css`: styling
 - `data.js`: game data (classes, ascendancies, gear slots). Edit this when a patch adds content.
 - `app.js`: app logic
+- `server.js`: optional zero-dependency Node server (`npm start`)
