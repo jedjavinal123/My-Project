@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PoE2 Build Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>PoE2 Build Tracker</h1>
+    <div class="topbar-actions">
+      <button data-action="export-all" class="btn">Export all</button>
+      <label class="btn">
+        Import
+        <input type="file" id="import-file" accept="application/json" hidden>
+      </label>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <button data-action="new-build" class="btn btn-primary btn-block">+ New build</button>
+      <input type="search" id="build-filter" placeholder="Filter builds…" class="input">
+      <ul id="build-list" class="build-list"></ul>
+    </aside>
+
+    <main id="main" class="main"></main>
+  </div>
+
+  <datalist id="ascendancy-options"></datalist>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
